@@ -37,9 +37,9 @@ public class Prestataire extends Intervenant {
 
 	public int getCoutProjet(boolean forfait, String nomProjet) {
 		if (forfait) {
-			this.getCoutProjetForfait(nomProjet);
+			return this.getCoutProjetForfait(nomProjet);
 		} else {
-			this.getCoutProjetPresta(nomProjet);
+			return this.getCoutProjetPresta(nomProjet);
 		}
 	}
 
